@@ -90,8 +90,8 @@ for page in page_range:
 
         except request.HTTPError:
             print("The post couldn't be retrieved")
-            time.sleep(3)
-            print("Retrying...")
+            # time.sleep(3)  # no need for that yet / incomplete fucntion
+            # print("Retrying...")
 
     #  print(urls.get("file_url").split(".")[-1])  # extention of the media
     if page == page_range[-1]:
